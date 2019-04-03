@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <title>Volt project</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img id="voltlogo" src="images/logo-volt.png" alt="logo"
+        /></a>
+        <p class="orange">Volt @ Roskilde Festival 2019</p>
+        <img
+          id="roskildelogo"
+          src="images/logo-roskilde.png"
+          alt="roskilde festival logo"
+        />
+        <a href="#serviceExplanation">How</a>
+        <a href="#pricing">Price</a>
+        <a href="#faq">FAQ</a>
+        <div id="navButton" class="greenBg">
+          <p id="btnTxt1">Grab your discount</p>
+          <p id="btnTxt2">Only 4 days left</p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="introduction">
+        <!--Needs to be mute!! -->
+        <video autoplay muted>
+          <source src="video/new Intro.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section id="serviceExplanation" class="greenBg">
+        <h1>How does it work?</h1>
+        <div id="explanation">
+          <div class="numbers" id="one">1</div>
+          <div class="numbers" id="two">2</div>
+          <div class="numbers" id="three">3</div>
+          <div class="numbers" id="four">4</div>
+          <div class="numbers" id="five">5</div>
+          <div class="numbers" id="6">6</div>
+          <img
+            class="serviceIcons"
+            id="charger"
+            src="images/Asset 13.png"
+            alt="charger"
+          />
+          <img
+            class="serviceIcons"
+            id="funtime"
+            src="images/Asset 11.png"
+            alt="festival fun"
+          />
+          <img
+            class="serviceIcons"
+            id="lowBattery"
+            src="images/Asset 7.png"
+            alt="low battery"
+          />
+          <img
+            class="serviceIcons"
+            id="swap"
+            src="images/Asset 10.png"
+            alt="swap"
+          />
+          <img
+            class="serviceIcons"
+            id="fullBattery"
+            src="images/Asset 9.png"
+            alt="full battery"
+          />
+          <img
+            class="serviceIcons"
+            id="festivalend"
+            src="images/Asset 12.png"
+            alt="festival end"
+          />
+          <h3 id="heading1">Pick Up</h3>
+          <h3 id="heading2">Enjoy!</h3>
+          <h3 id="heading3">Low?</h3>
+          <h3 id="heading4">Swap & go</h3>
+          <h3 id="heading5">PowerFULL</h3>
+          <h3 id="heading6">Get refund</h3>
+          <p>
+            Pick up your pocket-sized powerbank at the festival or get it home
+            delivered.
+          </p>
+          <p>Enjoy Roskilde Festival without worrying about your battery.</p>
+          <p>
+            Are your phone and powerbank running out of battery after a long fun
+            day?
+          </p>
+          <p>
+            Swap your empty powerbank for a fully charged one at 1 of 30 Volt
+            stations.
+          </p>
+          <p>You're ready to roll again! Keep capturing great moments.</p>
+          <p>
+            RF2019 ends :( Hand in your Volt powerbank and get your 200DKK
+            deposit back!
+          </p>
+        </div>
+        <button id="explanationBtn">Book Volt for 179 DKK</button>
+      </section>
+      <section id="pricing">
+        <h1>How much does it cost?</h1>
+
+        <h4 id="pricingText" class="orange">
+          Discount price valid for 4 more days!
+        </h4>
+        <div id="pricetable">
+          <img
+            id="powerbankInGlitter"
+            src="images/2019.PNG"
+            alt="powerbank in glitter"
+          />
+          <div id="swappingService">
+            <img src="images/lp-icon-swap-trimmed.png" alt="swapping sign" />
+            <h3>Swapping Service Roskilde Festival</h3>
+            <h4 class="orange" id="newPrice">179 DKK</h4>
+            <h4 id="oldPrice">250 DKK</h4>
+            <p>
+              Swap your empty powerbank at a Volt station once a day during the
+              whole Roskilde Festival. Compatible cable included.
+            </p>
+          </div>
+          <div id="powerbankDeposit">
+            <img src="images/Volt-Charger.png" alt="powerbank" />
+            <h3>Powerbank Deposit (refundable)</h3>
+            <h4>200 DKK</h4>
+            <p>
+              You pay a deposit for the powerbank that will be refunded when you
+              hand it in at the end of the festival. Or keep it for next time!
+            </p>
+          </div>
+        </div>
+        <p id="cancelInfo">You can always cancel before the festival!</p>
+        <button id="pricingBtn">Book Volt with discount</button>
+      </section>
+      <section id="faq">
+        <img src="images/girls.PNG" alt="girls are awesome powerbank" />
+        <div id="questions">
+          <h1>FAQ</h1>
+          <div id="question1">
+            <span id="down1" class="arrowDown"
+              ><i class="fas fa-angle-down"></i
+            ></span>
+
+            <h3>What if I booked Volt and can't go to the festival anymore?</h3>
+            <p id="question1Txt">
+              We understand that plans change, so we want to make it easy for
+              you, if for some reason you end up not going to the festival. If
+              you need to cancel and get a refund before the festival, you will
+              need to submit a refund request. You can cancel up until one week
+              before the festival starts.
+            </p>
+          </div>
+          <div>
+            <span class="arrowDown"><i class="fas fa-angle-down"></i></span>
+            <h3>Can I get my Volt powerbank before the festival starts?</h3>
+            <p></p>
+          </div>
+          <div>
+            <span class="arrowDown"><i class="fas fa-angle-down"></i></span>
+            <h3>Where can I swap an empty Volt powerbank?</h3>
+            <p></p>
+          </div>
+          <div>
+            <span class="arrowDown"><i class="fas fa-angle-down"></i></span>
+            <h3>How is Volt sustainable?</h3>
+            <p></p>
+          </div>
+          <div>
+            <span class="arrowDown"><i class="fas fa-angle-down"></i></span>
+            <h3>How long does it take to charge my phone?</h3>
+            <p></p>
+          </div>
+          <div>
+            <span class="arrowDown"><i class="fas fa-angle-down"></i></span>
+            <h3>How do I get my deposit back?</h3>
+            <p></p>
+          </div>
+          <div>
+            <span class="arrowDown"><i class="fas fa-angle-down"></i></span>
+            <h3>How big is the Volt powerbank</h3>
+          </div>
+        </div>
+      </section>
+      <section id="sharingWithFriends">
+        <h1>Sharing is Caring</h1>
+        <p>
+          Make sure 5 of your friends (you don't want to loose) book Volt and
+          keep your powerbank for free!
+        </p>
+        <div id="sharingContainer">
+          <div id="sharingExplanation">
+            <img id="bookImg" src="images/book.png" alt="computer" />
+            <div id="bookText">
+              <h3>Book Volt</h3>
+              <p>
+                You'll get a referral link that you can send to your friends
+                after booking.
+              </p>
+            </div>
+            <img
+              id="shareImg"
+              src="images/share.png"
+              alt="share with friends"
+            />
+            <div id="shareText">
+              <h3>Share with 5 friends</h3>
+              <p>
+                Your friends get 5% discount on the swapping service when they
+                use your link.
+              </p>
+            </div>
+            <img id="refundImg" src="images/refund.png" alt="refund" />
+            <div id="refundText">
+              <h3>Get your deposit back!</h3>
+              <p>
+                When 5 of your friends booked with your link, you get your 200
+                DKK deposit refunded and you can keep your powerbank after the
+                festival!
+              </p>
+            </div>
+          </div>
+
+          <img
+            id="friendsImg"
+            src="images/instafriends2.png"
+            alt="friends hugging"
+          />
+        </div>
+      </section>
+      <section id="discountBanner" class="greenBg">
+        <h4>
+          Last chance to grab your discount for Roskilde Festival. Only 4 days
+          left.
+        </h4>
+        <button id="discountBtn">Book Volt for 179 DKK</button>
+      </section>
+      <section id="community">
+        <h1>Join our community!</h1>
+        <div id="socialmediaHandles">
+          <h3>Follow us on</h3>
+          <a href="https://www.instagram.com/getvolt/" target="_blank"
+            ><img src="images/instagram.png" alt="instagram icon"
+          /></a>
+          <a href="https://www.facebook.com/getvolt" target="_blank">
+            <img src="images/facebook.png" alt="facebook icon"
+          /></a>
+        </div>
+        <span id="previous"><i class="fas fa-angle-left"></i></span>
+        <span id="next"><i class="fas fa-angle-right"></i></span>
+        <div id="slideshow">
+          <figure id="slideshow1">
+            <img
+              class="slides"
+              src="images/instagirls3.png"
+              alt="girls with beer"
+            />
+            <figcaption>The Volt experience</figcaption>
+          </figure>
+          <figure id="slideshow2">
+            <img
+              class="slides"
+              src="images/station2.png"
+              alt="green volt station"
+            />
+            <figcaption>Volt is GREEN</figcaption>
+          </figure>
+          <figure id="slideshow3">
+            <img class="slides" src="images/pride.png" alt="copenhagen pride" />
+            <figcaption>Volt at CPH Pride</figcaption>
+          </figure>
+          <figure id="slideshow4">
+            <img
+              class="slides"
+              src="images/voltpeople2.png"
+              alt="volunteers for volt"
+            />
+            <figcaption>Become Volt Volunteer</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="newsletter">
+        <h3>Don’t miss a thing! Sign up for our newsletter:</h3>
+        <input type="email" name="email" id="signup" placeholder="email" />
+      </section>
+    </main>
+    <footer>
+      <div id="information">
+        <h3>Information</h3>
+        <ul>
+          <li>About Volt</li>
+          <li>Terms of Service</li>
+          <li>Privacy Policy</li>
+          <li>Blog</li>
+          <li>Press</li>
+          <li>Business</li>
+        </ul>
+      </div>
+      <div id="festivals">
+        <h3>Festivals</h3>
+        <ul>
+          <li>Festivals</li>
+          <li>Volunteer</li>
+        </ul>
+      </div>
+      <div id="jobs">
+        <h3>Jobs</h3>
+        <ul>
+          <li>Open positions</li>
+        </ul>
+      </div>
+      <div id="support">
+        <h3>Support</h3>
+        <ul>
+          <li>Help</li>
+        </ul>
+      </div>
+      <div id="orders">
+        <h3>Orders</h3>
+        <ul>
+          <li>Payment</li>
+        </ul>
+      </div>
+      <div id="company">
+        <h3>Volt ApS</h3>
+        <ul>
+          <li>Esromgade 15, 4.flooe,2401</li>
+          <li>2200 Copenhagen</li>
+          <li>Denmark</li>
+          <li>CVR no.:35044329</li>
+          <li>@Copyright Volt 2018</li>
+        </ul>
+      </div>
+      <div id="languageSettings">
+        <img src="images/flag-round-250.png" alt="danish flag" />
+        <img src="images/flag-round-uk.png" alt="english flag" />
+      </div>
+    </footer>
+    <script src="js.js"></script>
+  </body>
+</html>

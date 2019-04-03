@@ -1,0 +1,529 @@
+/* 
+lime: #C4D600
+orange: #FA9D36
+turquoise: #2CB6B8
+*/
+
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("font/FontsFree-Net-proxima_nova_reg-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("font/FontsFree-Net-proxima_nova_bold-webfont.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("font/FontsFree-Net-Proxima-Nova-Bold-It.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("font/FontsFree-Net-Proxima-Nova-Thin.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Proxima-Nova", Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+.startbody,
+.newuserbody,
+.signupbody,
+.checkbody {
+  background-image: linear-gradient(to bottom right, #c4d600, #2cb6b8);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.logo {
+  height: 70px;
+  margin: 1.5em auto;
+}
+
+#basketlogo {
+  height: 40px;
+  margin: 25px 2em;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.purchaseheader {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.progressbar {
+  height: 42px;
+  margin: 0 auto;
+  display: block;
+}
+
+main.startscreen {
+  height: 500px;
+  width: 600px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 5em;
+  text-align: center;
+}
+
+.startscreen > h1 {
+  font-size: 1.5em;
+  text-align: center;
+  color: black;
+  margin: 0.5em 0 2em 0;
+}
+
+.startscreen > a {
+  display: block;
+  text-decoration: none;
+  color: initial;
+  font-weight: bold;
+}
+
+.startscreen > a > div {
+  height: 100px;
+  width: 400px;
+  background-color: white;
+  margin: 1em auto;
+  text-align: center;
+  padding: 2.5em;
+  border-radius: 5px;
+  border: 2px solid rgb(176, 179, 168);
+}
+
+.startscreen > a > div:hover {
+  background-color: #fa9d36;
+  border: 1px solid #fa9d36;
+}
+
+/* NEW USER FLOW */
+
+main.newscreen {
+  max-height: 80%;
+  width: 800px;
+  margin: 35px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-column-gap: 1.5em;
+  grid-row-gap: 8px;
+}
+
+main.newscreen > div {
+  background-color: white;
+  min-height: 200px;
+  border-radius: 15px;
+  padding: 1.7em;
+}
+
+main.newscreen > div > h3 {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+main.newscreen > div.swapbox {
+  grid-area: 1 /1;
+}
+
+main.newscreen > div.depositbox {
+  grid-area: 2 /1 / span 2;
+}
+
+main.newscreen > div.summarybox {
+  grid-area: 1 /2 / span 2;
+  background-color: rgb(226, 240, 226);
+}
+
+main.newscreen > a#continue {
+  grid-area: 3 /2;
+  width: 100%;
+}
+
+main.newscreen > a.backBtn {
+  grid-area: 4 /1;
+}
+
+.backBtn {
+  text-decoration: none;
+  color: black;
+  margin-top: 0.7em;
+}
+
+#swapqty,
+#powerqty {
+  font-size: 1.2em;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 2.2em;
+}
+
+#swapicon,
+#sleeve {
+  height: 70px;
+  float: right;
+  margin: 1em;
+}
+
+table#ordertable {
+  width: 90%;
+}
+
+td.sum {
+  text-align: right;
+}
+#totalrow {
+  height: 60px;
+  vertical-align: bottom;
+}
+
+h4#totalamount {
+  margin: 0;
+}
+
+.continueBtn {
+  background-color: black;
+  color: white;
+  border: none;
+  height: 50px;
+  font-size: 1.2em;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.continueBtn:hover {
+  background-color: #fa9d36;
+}
+
+/* SIGN UP SCREEN */
+
+main.signupscreen {
+  max-height: 80%;
+  width: 800px;
+  margin: 1.5em auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1.5em;
+  grid-row-gap: 8px;
+}
+
+main.signupscreen > div.loginbox {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2em;
+  position: relative;
+}
+
+main.signupscreen > div.registerbox {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2em;
+  position: relative;
+}
+
+.boxheader {
+  text-align: center;
+}
+
+.boxheader p,
+.boxheader h3 {
+  margin: 5px;
+}
+
+h3.loginheader {
+  font-size: 1.5em;
+}
+
+div.registerbox > .boxheader > h3 {
+  margin-top: 0;
+}
+
+main.signupscreen form {
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 0 2em;
+}
+
+main.signupscreen label,
+main.signupscreen input,
+main.signupscreen select {
+  display: block;
+  margin-top: 5px;
+}
+
+input.field,
+select.field {
+  height: 2em;
+  width: 20em;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 1px 3px;
+}
+
+select#country > option {
+  width: 20em;
+}
+
+input#email {
+  margin-bottom: 1.5em;
+}
+
+a#forgotpass {
+  text-decoration: none;
+  color: #2cb6b8;
+  font-size: 0.8em;
+  margin: 5px 0;
+}
+
+#registerform > label {
+  font-size: 0.9em;
+  margin: 0.8em 0 0;
+}
+
+#registerform > div#marketingemail > input {
+  position: relative;
+  float: left;
+  margin: 0.5em 1em 1em 0;
+  vertical-align: middle;
+}
+
+#registerform > div#marketingemail > label {
+  font-size: 0.8em;
+  margin-top: 1.5em;
+}
+
+input#loginBtn,
+input#signupBtn {
+  width: 50%;
+  height: 2em;
+  border-radius: 10px;
+  margin: 1em auto 0;
+}
+
+/* need overlay for inactive form - default position is set with JS */
+.overlay {
+  position: absolute;
+  font-size: 1em;
+  background-color: rgba(192, 204, 192, 0.774);
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* PAYMENT METHOD */
+
+main.checkscreen {
+  max-height: 80%;
+  width: 800px;
+  margin: 35px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-column-gap: 1.5em;
+  grid-row-gap: 8px;
+}
+
+main.checkscreen > div {
+  background-color: white;
+  min-height: 200px;
+  border-radius: 15px;
+  padding: 1.7em;
+}
+
+main.checkscreen > .deliverybox {
+  grid-area: 1 /1;
+}
+
+.deliverybox > h3,
+.paymethodbox > h3,
+.summarybox > h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+main.checkscreen > .paymethodbox {
+  grid-area: 2 /1 / span 2;
+}
+
+main.checkscreen > .summarybox {
+  grid-area: 1 /2 / span 2;
+  background-color: rgb(226, 240, 226);
+}
+
+main.checkscreen > a#continue {
+  grid-area: 3 /2;
+  width: 100%;
+}
+
+main.checkscreen > a.backBtn {
+  grid-area: 4 /1;
+}
+
+/* delivery method form */
+
+.deliverymethod {
+  margin: 0;
+}
+
+form.deliverymethod input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+}
+
+.delivery-label {
+  height: 40px;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0;
+  display: block;
+}
+
+.deliverymethod input:checked + .delivery-label,
+.deliverymethod input:hover + .delivery-label {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  border: 2px solid #fa9d36;
+}
+
+form.deliverymethod > div > input.addressinfo {
+  border: 1px solid lightgrey;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input#shipaddress1 {
+  width: 90%;
+}
+
+input#shipaddress2 {
+  width: 6em;
+}
+
+input#shipaddress3 {
+  width: 65%;
+}
+
+/* payment method form */
+
+form.cc-selector input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.payimg {
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.creditcard {
+  background: url(images/creditcards.png) no-repeat center;
+  background-size: contain;
+  background-origin: content-box;
+  margin-left: 0;
+}
+
+.mobilepay {
+  background: url(images/mobilepay.png) no-repeat center;
+  background-size: contain;
+  background-origin: content-box;
+}
+
+.paypal {
+  background: url(images/paypal.png) no-repeat center;
+  background-size: contain;
+  background-origin: content-box;
+}
+
+.cc-selector input:active + .payimg,
+.cc-selector input:hover + .payimg {
+  opacity: 1;
+}
+.cc-selector input:checked + .payimg {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  opacity: 1;
+  border: 2px solid #fa9d36;
+}
+
+/* terms privacy checkbox */
+
+div#checkboxes {
+  margin-top: 1em;
+}
+
+input#checkterms {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  vertical-align: middle;
+  position: relative;
+}
+
+label#termslabel {
+  display: inline-block;
+  font-size: 0.9em;
+  vertical-align: middle;
+}

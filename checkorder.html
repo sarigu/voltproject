@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="purchase.css" />
+    <title>Purchase Flow Volt</title>
+  </head>
+  <body class="checkbody">
+    <div class="purchaseheader">
+      <img id="basketlogo" class="logo" src="images/logoblack.png" />
+      <img class="progressbar" src="images/progress3.png" />
+    </div>
+
+    <main class="checkscreen">
+      <div class="deliverybox">
+        <h3>Choose Powerbank Delivery Method:</h3>
+
+        <form class="deliverymethod">
+          <input id="freepickup" type="radio" name="delivery" value="pickup" />
+          <label class="delivery-label" for="freepickup">
+            Pick up at festival or Volt CPH for FREE</label
+          >
+
+          <input id="shiphome" type="radio" name="delivery" value="shiphome" />
+          <label id="shiplabel" class="delivery-label" for="shiphome"
+            >Ship to my home address for 50 DKK</label
+          >
+          <div id="shippinginfo" class="hide">
+            <input
+              id="shipaddress1"
+              class="addressinfo"
+              type="text"
+              name="address"
+              placeholder="Street"
+            />
+            <input
+              id="shipaddress2"
+              class="addressinfo"
+              type="text"
+              name="zip"
+              placeholder="Postcode"
+            />
+
+            <input
+              id="shipaddress3"
+              class="addressinfo"
+              type="text"
+              name="city"
+              placeholder="City"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="paymethodbox">
+        <h3>Choose Payment Method:</h3>
+
+        <form class="cc-selector">
+          <input
+            id="creditcard"
+            type="radio"
+            name="payment"
+            value="creditcard"
+            required
+          />
+          <label class="payimg creditcard" for="creditcard"></label>
+
+          <input id="mobilepay" type="radio" name="payment" value="mobilepay" />
+          <label class="payimg mobilepay" for="mobilepay"></label>
+
+          <input id="paypal" type="radio" name="payment" value="paypal" />
+          <label class="payimg paypal" for="paypal"></label>
+        </form>
+
+        <div id="checkboxes">
+          <input
+            id="checkterms"
+            type="checkbox"
+            name="terms"
+            value="terms"
+            required
+          />
+          <label id="termslabel" for="checkterms">
+            I agree to Volt's terms and privacy policy.</label
+          >
+        </div>
+      </div>
+
+      <div class="summarybox">
+        <h3>Order Summary</h3>
+
+        <table id="ordertable">
+          <tr>
+            <td id="swapnumber">1</td>
+            <td>x Swapping Service</td>
+            <td id="swaptotal" class="sum"></td>
+          </tr>
+
+          <tr>
+            <td id="powernumber">1</td>
+            <td>x Powerbank Deposit</td>
+            <td id="powertotal" class="sum"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Shipping</td>
+            <td id="shippingprice" class="sum">0 DKK</td>
+          </tr>
+
+          <tr id="totalrow">
+            <td colspan="2"><h4 id="totalamount">Total amount:</h4></td>
+            <td id="totalsum" class="sum bold"></td>
+          </tr>
+          <tr>
+            <td colspan="2">Incl. 25% VAT</td>
+            <td id="totalvat" class="sum"></td>
+          </tr>
+        </table>
+      </div>
+
+      <button id="submitOrder" class="continueBtn">
+        Continue to Payment
+      </button>
+
+      <a class="backBtn" href="signup.html"> Back</a>
+    </main>
+    <script src="js/checkorder.js"></script>
+  </body>
+</html>

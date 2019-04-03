@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="purchase.css" />
+    <title>Purchase Flow Volt</title>
+  </head>
+  <body class="newuserbody">
+    <div class="purchaseheader">
+      <img id="basketlogo" class="logo" src="images/logoblack.png" />
+      <img class="progressbar" src="images/progress1.png" />
+    </div>
+
+    <main class="newscreen">
+      <div class="swapbox">
+        <h3>Swapping Service @ Roskilde Festival</h3>
+        <img id="swapicon" src="images/swapicon.png" />
+        <p>
+          <input
+            id="swapqty"
+            type="number"
+            name="quantity"
+            value="1"
+            min="1"
+            max="50"
+          />
+          x 179 DKK
+        </p>
+        <p>
+          Swap your empty powerbank once a day for a full one at 1 of the Volt
+          stations.
+        </p>
+      </div>
+
+      <div class="depositbox">
+        <h3>Powerbank Deposit (refundable)</h3>
+        <img id="sleeve" src="images/sleeverf.png" />
+        <p>
+          <input
+            id="powerqty"
+            type="number"
+            name="quantity"
+            value="1"
+            min="0"
+            max="50"
+          />
+          x 200 DKK
+        </p>
+        <p>
+          You pay a deposit for the powerbank that will be refunded whenever you
+          hand it in.
+        </p>
+      </div>
+
+      <div class="summarybox">
+        <h3>Order Summary</h3>
+
+        <table id="ordertable">
+          <tr>
+            <td id="swapnumber">1</td>
+            <td>x Swapping Service</td>
+            <td id="swaptotal" class="sum">179 DKK</td>
+          </tr>
+
+          <tr>
+            <td id="powernumber">1</td>
+            <td>x Powerbank Deposit</td>
+            <td id="powertotal" class="sum">200 DKK</td>
+          </tr>
+
+          <tr id="totalrow">
+            <td colspan="2"><h4 id="totalamount">Total amount:</h4></td>
+            <td id="totalsum" class="sum bold">379 DKK</td>
+          </tr>
+          <tr>
+            <td colspan="2">Incl. 25% VAT</td>
+            <td id="totalvat" class="sum">76 DKK</td>
+          </tr>
+        </table>
+      </div>
+
+      <button id="submitPrices" class="continueBtn">
+        Continue to sign up
+      </button>
+
+      <a class="backBtn" href="flow-start.html"> Back</a>
+    </main>
+    <script src="js/newbasket.js"></script>
+  </body>
+</html>

@@ -1,0 +1,643 @@
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("font/FontsFree-Net-proxima_nova_reg-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("font/FontsFree-Net-proxima_nova_bold-webfont.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("font/FontsFree-Net-Proxima-Nova-Bold-It.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("font/FontsFree-Net-Proxima-Nova-Thin.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  font-family: "Proxima-Nova", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.orange {
+  color: #fa9d36;
+}
+
+.greenBg {
+  background-color: #c4d600;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+/*   ///////  NAV  ///////////  */
+
+nav {
+  background-color: black;
+  vertical-align: bottom;
+  height: 5.4em;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 0em;
+  margin: 0em;
+}
+
+nav * {
+  display: inline-block;
+}
+#voltlogo {
+  position: absolute;
+  left: 0em;
+  top: 0em;
+  width: 10%;
+}
+
+#roskildelogo {
+  width: 5%;
+  margin-left: 0.8em;
+  margin-right: 4.2em;
+  vertical-align: bottom;
+  margin-bottom: 2em;
+}
+
+nav p {
+  vertical-align: bottom;
+  margin-left: 20em;
+  line-height: 4em;
+}
+
+nav a {
+  vertical-align: bottom;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 6em;
+  padding-right: 0.5em;
+  cursor: pointer;
+}
+
+nav div {
+  vertical-align: bottom;
+  margin-bottom: 1.8em;
+  width: 10em;
+  height: 3em;
+  margin-left: 15em;
+  border-radius: 0.5em;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#btnTxt1 {
+  color: black;
+  font-size: 0.8em;
+  margin-left: 1.2em;
+  margin-top: -0.7em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btnTxt2 {
+  color: white;
+  font-size: 0.7em;
+  margin-left: 3.2em;
+  margin-top: -4em;
+  margin-bottom: 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*   ///////  Section 1 (Intro) ///////////  */
+
+video {
+  margin-top: 2.7em;
+  margin-left: 6.6em;
+  width: 82%;
+}
+
+/*   ///////  Section 2 (Service Explanation)  ///////////  */
+
+#serviceExplanation {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+#serviceExplanation h1 {
+  margin-bottom: 2em;
+}
+
+#serviceExplanation p {
+  font-size: 0.85em;
+}
+
+#serviceExplanation button {
+  background-color: black;
+  color: white;
+  border-radius: 0.5em;
+  width: 20em;
+  height: 4em;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 5em;
+  margin-left: 30em;
+  cursor: pointer;
+}
+
+#explanation {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+  grid-column-gap: 1.2em;
+  grid-template-areas:
+    "nmbrOne nmbrTwo nmbrThree nmbrFour nmbrFive nmbrSix" "charger funtime lowBattery swap fullBattery festivalend"
+    "heading1 heading2 heading3 heading4 heading5 heading6";
+}
+
+#one {
+  grid-area: nmbrOne;
+}
+
+#two {
+  grid-area: nmbrTwo;
+}
+
+#three {
+  grid-area: nmbrThree;
+}
+
+#four {
+  grid-area: nmbrFour;
+}
+
+#five {
+  grid-area: nmbrFive;
+}
+
+#six {
+  grid-area: nmbrSix;
+}
+
+.numbers {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#charger {
+  grid-area: charger;
+}
+
+#funtime {
+  grid-area: funtime;
+}
+
+#lowBattery {
+  grid-area: lowBattery;
+}
+
+#swap {
+  grid-area: swap;
+}
+
+#fullBattery {
+  width: 62%;
+  grid-area: fullBattery;
+}
+
+#festivalend {
+  grid-area: festivalend;
+}
+
+.serviceIcons {
+  width: 75%;
+}
+
+#heading1 {
+  grid-area: heading1;
+  margin-left: 1.5em;
+}
+
+#heading2 {
+  grid-area: heading2;
+  margin-left: 1.8em;
+}
+#heading3 {
+  grid-area: heading3;
+  margin-left: 2em;
+}
+
+#heading4 {
+  grid-area: heading4;
+  margin-left: 0.5em;
+}
+#heading5 {
+  grid-area: heading5;
+  margin-left: 0.8em;
+}
+#heading6 {
+  grid-area: heading6;
+  margin-left: 0.5em;
+}
+
+/*   ///////  Section 2 (Pricing)  ///////////  */
+
+#pricing {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+#pricing h4 {
+  font-style: italic;
+  margin-bottom: 3.2em;
+}
+
+#pricetable {
+  display: grid;
+  grid-template-columns: 1fr, 3fr;
+  grid-template-areas: "image swapping" "image powerbank";
+}
+
+#powerbankInGlitter {
+  grid-area: image;
+  width: 100%;
+}
+
+/*Swapping service*/
+
+#swappingService {
+  grid-area: swapping;
+  padding-right: 2em;
+  background-color: #c4d60065;
+  display: grid;
+  grid-template-columns: 1fr, 2fr, 1fr;
+  grid-template-areas: "swapImg swappingHeading newPrice" "swapImg swappingText oldPrice";
+}
+
+#swappingService img {
+  width: 30%;
+  grid-area: swapImg;
+  margin-top: 4.5em;
+  margin-left: 2.5em;
+}
+#swappingService h3 {
+  grid-area: swappingHeading;
+  margin-left: -5.7em;
+  margin-top: 3em;
+}
+
+#newPrice {
+  grid-area: newPrice;
+  margin-top: 3.5em;
+  margin-left: -1.2em;
+}
+
+#oldPrice {
+  grid-area: oldPrice;
+  font-style: normal;
+  text-decoration: line-through;
+  color: gray;
+  margin-top: -4.8em;
+  margin-left: -1.2em;
+}
+
+#swappingService p {
+  grid-area: swappingText;
+  margin-left: -6.6em;
+  margin-top: -3em;
+}
+
+/*charger deposit*/
+
+#powerbankDeposit {
+  background-color: #e4e4e4;
+  grid-area: powerbank;
+  padding-right: 2em;
+  display: grid;
+  grid-template-columns: 1fr, 2fr, 1fr;
+  grid-template-areas: "depositImg depositHeading depositPrice" "depositImg depositText .";
+}
+
+#powerbankDeposit img {
+  width: 35%;
+  margin-top: 4.5em;
+  margin-left: 1.6em;
+  margin-right: 1em;
+  grid-area: depositImg;
+}
+
+#powerbankDeposit h3 {
+  margin-left: -7.4em;
+  margin-top: 3em;
+  grid-area: depositHeading;
+}
+
+#powerbankDeposit h4 {
+  grid-area: depositPrice;
+  font-style: normal;
+  margin-left: -4.2em;
+  margin-top: 3.6em;
+}
+
+#powerbankDeposit p {
+  grid-area: depositText;
+  margin-top: -4em;
+  margin-left: -8.7em;
+}
+
+#cancelInfo {
+  margin-top: 3em;
+  margin-left: 47.3em;
+}
+
+#pricing button {
+  background-color: #fa9d36;
+  color: black;
+  border-radius: 0.5em;
+  width: 20em;
+  height: 4em;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 1em;
+  margin-left: 61.5em;
+  cursor: pointer;
+}
+
+/*   ///////  Section 3 (Questions)  ///////////  */
+
+#faq {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-areas: "image questions";
+}
+
+#faq img {
+  grid-area: image;
+  width: 100%;
+}
+
+#questions {
+  grid-area: questions;
+  height: 41.5em;
+  background-color: #fa9e3681;
+  padding-right: 2em;
+  padding-left: 4em;
+}
+
+#questions h1 {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+}
+#questions h3 {
+  display: inline-block;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#question1Txt {
+  display: none;
+  width: 32em;
+  margin-left: 1em;
+}
+
+#questions .arrowDown {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 0.4em;
+}
+
+/*   ///////  Section 3 (Sharing is Caring)  ///////////  */
+
+#sharingWithFriends {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+#friendsImg {
+  width: 31%;
+  grid-area: friendsImg;
+  margin-left: 45em;
+  margin-top: -50em;
+  margin-bottom: 1.8em;
+}
+
+#sharingExplanation {
+  margin-top: 3.4em;
+  width: 60%;
+  grid-area: explanation;
+  display: inline;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "bookImg bookText" "shareImg shareText" "refundImg refundText";
+}
+
+#bookImg {
+  grid-area: bookImg;
+  width: 50%;
+}
+
+#shareImg {
+  grid-area: shareImg;
+  width: 50%;
+}
+
+#refundImg {
+  grid-area: refundImg;
+  width: 50%;
+}
+
+#bookText {
+  grid-area: bookText;
+}
+#shareText {
+  grid-area: shareText;
+}
+#refundText {
+  grid-area: refundText;
+}
+
+/*   ///////  Section 4 (Discount banner)  ///////////  */
+
+#discountBanner {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+#discountBanner button {
+  background-color: black;
+  color: white;
+  border-radius: 0.5em;
+  width: 15em;
+  height: 3.4em;
+  font-weight: bold;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+/*   ///////  Section 5 (Social media/community)  ///////////  */
+
+#community {
+  background: linear-gradient(
+    to bottom,
+    white 50%,
+    rgba(44, 182, 184, 0.473) 50%
+  );
+  padding-top: 3em;
+  padding-bottom: 8em;
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+#community span {
+  font-size: 2.5em;
+}
+
+#socialmediaHandles {
+  margin-left: 52em;
+  margin-top: -3.3em;
+  cursor: pointer;
+}
+
+#socialmediaHandles img {
+  width: 15%;
+  display: inline-block;
+}
+
+#socialmediaHandles h3 {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+#slideshow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "slide1 slide2 slide3 slide4";
+}
+
+#slideshow figcaption {
+  font-weight: bold;
+}
+
+#slideshow1 img {
+  grid-area: slide1;
+}
+
+#slideshow2 img {
+  grid-area: slide2;
+}
+
+#slideshow3 img {
+  grid-area: slide3;
+}
+
+#slideshow4 img {
+  grid-area: slide4;
+}
+
+.slides {
+  width: 100%;
+}
+
+#previous {
+  position: relative;
+  top: 3.05em;
+  left: -1.4em;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#next {
+  position: relative;
+  top: 3.1em;
+  left: 26.5em;
+  z-index: 1;
+  cursor: pointer;
+}
+/*   ///////  Section 6 (Newsletter)  ///////////  */
+
+#newsletter {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 7em;
+  background-color: #2cb6b8;
+}
+
+#newsletter h3 {
+  display: inline;
+}
+
+#newsletter input {
+  display: inline;
+  border-radius: 0.5em;
+  width: 18em;
+  height: 1.5em;
+}
+
+/*   ///////  Section 7 (Footer)  ///////////  */
+
+footer {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 7em;
+  padding-right: 7em;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "info festivals support orders company languageSettings" "info jobs . . company .";
+}
+
+footer img {
+  width: 15%;
+  padding: 0.2em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-left: -2.5em;
+}
+
+#information {
+  grid-area: info;
+}
+#festivals {
+  grid-area: festivals;
+}
+#jobs {
+  grid-area: jobs;
+}
+#support {
+  grid-area: support;
+}
+#orders {
+  grid-area: orders;
+}
+#company {
+  grid-area: company;
+}
+#languageSettings {
+  grid-area: languageSettings;
+  cursor: pointer;
+}
