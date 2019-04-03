@@ -1,1 +1,1 @@
-# This is a schoolproject for Volt.
+# This is a school project for Volt.
