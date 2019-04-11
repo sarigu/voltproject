@@ -7,9 +7,9 @@ let question1 = document.querySelector("#question1");
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
-  //alert(
-  // "Welcome! Please notice that this website is a school project. It is not an official Volt website."
-  //);
+  alert(
+    "Welcome! Please notice that this website is a school project. It is not an official Volt website."
+  );
   navBtn.addEventListener("click", openPurchaseflow);
   explanationBtn.addEventListener("click", openPurchaseflow);
   pricingBtn.addEventListener("click", openPurchaseflow);
@@ -24,6 +24,7 @@ function openPurchaseflow() {
 function showAnswer() {
   if (document.querySelector("#question1Txt").style.display === "none") {
     document.querySelector("#question1Txt").style.display = "block";
+    document.querySelector("#lastQuestion").style.display = "none";
   } else {
     document.querySelector("#question1Txt").style.display = "none";
   }

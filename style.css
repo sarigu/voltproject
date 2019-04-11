@@ -31,6 +31,7 @@
   font-family: "Proxima-Nova", Helvetica, sans-serif;
   font-style: normal;
   font-weight: 100;
+  border: none;
 }
 
 .orange {
@@ -58,8 +59,6 @@ nav {
   top: 0;
   z-index: 1;
   width: 100%;
-  padding: 0em;
-  margin: 0em;
 }
 
 nav * {
@@ -67,9 +66,10 @@ nav * {
 }
 #voltlogo {
   position: absolute;
-  left: 0em;
-  top: 0em;
+  left: 3em;
+  top: 1em;
   width: 10%;
+  max-height: 5.4em;
 }
 
 #roskildelogo {
@@ -101,7 +101,7 @@ nav div {
   margin-bottom: 1.8em;
   width: 10em;
   height: 3em;
-  margin-left: 15em;
+  margin-left: 13em;
   border-radius: 0.5em;
   display: inline-block;
   cursor: pointer;
@@ -139,8 +139,8 @@ video {
 #serviceExplanation {
   padding-top: 3em;
   padding-bottom: 3em;
-  padding-left: 7em;
-  padding-right: 7em;
+  padding-left: 12em;
+  padding-right: 12em;
 }
 
 #serviceExplanation h1 {
@@ -159,18 +159,18 @@ video {
   height: 4em;
   font-weight: bold;
   font-size: 0.8em;
-  margin-top: 5em;
-  margin-left: 30em;
+  margin-top: 4em;
+  margin-left: 22.5em;
   cursor: pointer;
 }
 
 #explanation {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
-  grid-column-gap: 1.2em;
+  grid-column-gap: 2.5em;
   grid-template-areas:
     "nmbrOne nmbrTwo nmbrThree nmbrFour nmbrFive nmbrSix" "charger funtime lowBattery swap fullBattery festivalend"
-    "heading1 heading2 heading3 heading4 heading5 heading6";
+    "heading1 heading2 heading3 heading4 heading5 heading6" "txt1 txt2 txt3 txt4 txt5 txt6";
 }
 
 #one {
@@ -195,6 +195,7 @@ video {
 
 #six {
   grid-area: nmbrSix;
+  margin-left: -1em;
 }
 
 .numbers {
@@ -208,6 +209,7 @@ video {
 
 #funtime {
   grid-area: funtime;
+  width: 73%;
 }
 
 #lowBattery {
@@ -219,7 +221,7 @@ video {
 }
 
 #fullBattery {
-  width: 62%;
+  width: 57%;
   grid-area: fullBattery;
 }
 
@@ -233,29 +235,61 @@ video {
 
 #heading1 {
   grid-area: heading1;
-  margin-left: 1.5em;
+  margin-left: 0.3em;
 }
 
 #heading2 {
   grid-area: heading2;
-  margin-left: 1.8em;
+  margin-left: 0.55em;
 }
 #heading3 {
   grid-area: heading3;
-  margin-left: 2em;
+  margin-left: 0.9em;
 }
 
 #heading4 {
   grid-area: heading4;
-  margin-left: 0.5em;
+  margin-left: 0em;
 }
 #heading5 {
   grid-area: heading5;
-  margin-left: 0.8em;
+  margin-left: 0.4em;
 }
 #heading6 {
   grid-area: heading6;
-  margin-left: 0.5em;
+}
+
+#text1 {
+  grid-area: txt1;
+}
+
+#text2 {
+  grid-area: txt2;
+}
+
+#text4 {
+  grid-area: txt4;
+}
+
+#text5 {
+  grid-area: txt5;
+  padding-right: 0.5em;
+}
+
+#text6 {
+  grid-area: txt6;
+}
+
+#swoosh {
+  width: 50%;
+  margin-left: 12em;
+  margin-top: -5em;
+}
+
+#repeatTxt {
+  font-weight: bold;
+  margin-left: 24em;
+  margin-top: 4em;
 }
 
 /*   ///////  Section 2 (Pricing)  ///////////  */
@@ -269,7 +303,7 @@ video {
 
 #pricing h4 {
   font-style: italic;
-  margin-bottom: 3.2em;
+  margin-bottom: 2.5em;
 }
 
 #pricetable {
@@ -280,14 +314,17 @@ video {
 
 #powerbankInGlitter {
   grid-area: image;
-  width: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 /*Swapping service*/
 
 #swappingService {
   grid-area: swapping;
-  padding-right: 2em;
+  margin-left: -15.6em;
   background-color: #c4d60065;
   display: grid;
   grid-template-columns: 1fr, 2fr, 1fr;
@@ -297,19 +334,19 @@ video {
 #swappingService img {
   width: 30%;
   grid-area: swapImg;
-  margin-top: 4.5em;
+  margin-top: 1.8em;
   margin-left: 2.5em;
 }
 #swappingService h3 {
   grid-area: swappingHeading;
   margin-left: -5.7em;
-  margin-top: 3em;
+  margin-top: 1.3em;
 }
 
 #newPrice {
   grid-area: newPrice;
-  margin-top: 3.5em;
-  margin-left: -1.2em;
+  margin-top: 1.6em;
+  margin-left: -15.2em;
 }
 
 #oldPrice {
@@ -317,19 +354,23 @@ video {
   font-style: normal;
   text-decoration: line-through;
   color: gray;
-  margin-top: -4.8em;
-  margin-left: -1.2em;
+  margin-top: -2.4em;
+  margin-left: -15.2em;
 }
 
 #swappingService p {
   grid-area: swappingText;
-  margin-left: -6.6em;
-  margin-top: -3em;
+  margin-left: -7.5em;
+  margin-top: -2em;
+  padding-right: 20em;
+  font-size: 0.9em;
 }
 
 /*charger deposit*/
 
 #powerbankDeposit {
+  padding-top: 1.9em;
+  margin-left: -15.6em;
   background-color: #e4e4e4;
   grid-area: powerbank;
   padding-right: 2em;
@@ -339,35 +380,37 @@ video {
 }
 
 #powerbankDeposit img {
-  width: 35%;
-  margin-top: 4.5em;
-  margin-left: 1.6em;
+  width: 25%;
+  margin-top: -0.8em;
+  margin-left: 2.2em;
   margin-right: 1em;
   grid-area: depositImg;
 }
 
 #powerbankDeposit h3 {
-  margin-left: -7.4em;
-  margin-top: 3em;
+  margin-left: -11.4em;
+  margin-top: -0.72em;
   grid-area: depositHeading;
 }
 
 #powerbankDeposit h4 {
   grid-area: depositPrice;
   font-style: normal;
-  margin-left: -4.2em;
-  margin-top: 3.6em;
+  margin-top: -0.5em;
+  margin-left: -13em;
 }
 
 #powerbankDeposit p {
+  font-size: 0.9em;
   grid-area: depositText;
-  margin-top: -4em;
-  margin-left: -8.7em;
+  margin-top: -3.1em;
+  margin-left: -14.9em;
+  padding-right: 14em;
 }
 
 #cancelInfo {
   margin-top: 3em;
-  margin-left: 47.3em;
+  margin-left: 42.5em;
 }
 
 #pricing button {
@@ -379,7 +422,7 @@ video {
   font-weight: bold;
   font-size: 0.8em;
   margin-top: 1em;
-  margin-left: 61.5em;
+  margin-left: 55.5em;
   cursor: pointer;
 }
 
@@ -392,16 +435,18 @@ video {
 }
 
 #faq img {
+  max-height: 41.5em;
   grid-area: image;
   width: 100%;
 }
 
 #questions {
   grid-area: questions;
-  height: 41.5em;
+  max-height: 41.5em;
   background-color: #fa9e3681;
   padding-right: 2em;
   padding-left: 4em;
+  overflow: hidden;
 }
 
 #questions h1 {
@@ -416,7 +461,7 @@ video {
 
 #question1Txt {
   display: none;
-  width: 32em;
+  width: 25em;
   margin-left: 1em;
 }
 
@@ -436,16 +481,18 @@ video {
 }
 
 #friendsImg {
-  width: 31%;
+  width: 25%;
   grid-area: friendsImg;
   margin-left: 45em;
-  margin-top: -50em;
-  margin-bottom: 1.8em;
+  margin-top: -20em;
+  margin-bottom: 2.2em;
+  position: absolute;
 }
 
 #sharingExplanation {
   margin-top: 3.4em;
-  width: 60%;
+  margin-right: 1.5em;
+  max-width: 60%;
   grid-area: explanation;
   display: inline;
   display: grid;
@@ -456,16 +503,19 @@ video {
 #bookImg {
   grid-area: bookImg;
   width: 50%;
+  margin-top: 1em;
 }
 
 #shareImg {
   grid-area: shareImg;
   width: 50%;
+  margin-top: 1em;
 }
 
 #refundImg {
   grid-area: refundImg;
   width: 50%;
+  margin-top: 1em;
 }
 
 #bookText {
@@ -515,13 +565,13 @@ video {
 }
 
 #socialmediaHandles {
-  margin-left: 52em;
+  margin-left: 48em;
   margin-top: -3.3em;
   cursor: pointer;
 }
 
 #socialmediaHandles img {
-  width: 15%;
+  width: 13%;
   display: inline-block;
 }
 
@@ -538,6 +588,7 @@ video {
 
 #slideshow figcaption {
   font-weight: bold;
+  font-size: 0.8em;
 }
 
 #slideshow1 img {
@@ -562,7 +613,7 @@ video {
 
 #previous {
   position: relative;
-  top: 3.05em;
+  top: 2.8em;
   left: -1.4em;
   z-index: 1;
   cursor: pointer;
@@ -570,8 +621,8 @@ video {
 
 #next {
   position: relative;
-  top: 3.1em;
-  left: 26.5em;
+  top: 2.8em;
+  left: 24.5em;
   z-index: 1;
   cursor: pointer;
 }
@@ -592,7 +643,8 @@ video {
   display: inline;
   border-radius: 0.5em;
   width: 18em;
-  height: 1.5em;
+  height: 1.9em;
+  margin-left: 1em;
 }
 
 /*   ///////  Section 7 (Footer)  ///////////  */
